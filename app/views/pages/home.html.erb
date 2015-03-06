@@ -1,0 +1,16 @@
+<h1>Welcome!</h1>
+
+<h3>User Information:</h3>
+<% @userRecords.each do |user| %>
+	<p><%= user.username %> | <%= user.email %> | <%= user.age %></p>
+<% end %>
+
+<h3>Todo:</h3>
+<% @todoRecords.each do |todo| %>
+	<p><%= todo.tasks %> | <%= todo.finished %></p>
+<% end %>
+
+<h3>Our Cats:</h3>
+<% @catRecords.each do |cat| %>
+	<p><%= cat.name %> <%= cat.meow%></p>
+<% end %>
